@@ -120,7 +120,7 @@ const renderTodos = () => {
             onclick="handleClickEditTodo( ${index})"
             title="Click to edit"
           >
-            <div class="todo__task-content flex-grow-1 h-100 d-flex align-items-center w-100">
+            <div class="todo__task-content flex-grow-1 h-100 d-flex align-items-center">
               ${
                 todoIndex === index
                   ? `

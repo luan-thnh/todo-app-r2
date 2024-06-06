@@ -82,10 +82,20 @@ button {
 }
 
 .todo__task-content {
+  width: 0;
   cursor: pointer;
   background: #eeeeee url(../img/bg_highlight.png) 50% top repeat-x;
-  border-right: 1px solid #dddddd;
   padding: 8px 30px 8px 8px;
+}
+
+.todo__task-content,
+.todo__task-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.todo__task-text {
+  white-space: nowrap;
 }
 
 .todo__task-text.done {
@@ -99,6 +109,7 @@ button {
   padding: 4px;
   border-right: 1px solid #dddddd;
   cursor: pointer;
+  flex: 1;
 }
 
 .todo__task-checkbox {
@@ -145,6 +156,7 @@ button {
   background: #eeeeee url(../img/bg_highlight.png) 50% top repeat-x;
   position: relative;
   z-index: 9;
+  border-left: 1px solid #dddddd;
 }
 
 .todo__task-btn--delete {
